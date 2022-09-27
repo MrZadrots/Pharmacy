@@ -1,0 +1,19 @@
+﻿.registery_btn{
+    margin-right:10px;
+}
+.card_wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #eee;
+    background: white;
+    overflow: hidden;
+}
+.card_wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+#SearchInput input {
+    width: 250px;
+}

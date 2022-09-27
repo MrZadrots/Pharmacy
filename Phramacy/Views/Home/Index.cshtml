@@ -1,0 +1,36 @@
+﻿@model Phramacy.ViewModels.HomeViewModel
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <form asp-controller="Home" asp-action="Search">
+                    <p>
+                        <input placeholder="Поиск" type="text" name="searchString" id="SearchInput" />
+                        <input type="submit" value="Поиск" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg text-center">
+                <div class="card_wrapper">
+                    <a href="/Product/List/bads">
+                        <span><img src="img/bads.png" alt="#"></span>
+                        <span>Бады</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg text-center">
+                <div class="card_wrapper">
+                    <a href="/Product/List/medicine">
+                        <span><img src="img/medicine.png" alt="#"></span>
+                        <span>Лекартсвенные средства</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

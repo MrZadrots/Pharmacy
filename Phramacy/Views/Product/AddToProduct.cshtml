@@ -1,0 +1,66 @@
+﻿@model Product
+<form asp-area="Admin" asp-controller="Product" asp-action="AddToProduct">
+    <div class="form-group">
+        <label asp-for="@Model.name"></label>
+        <div class="col-md-5">
+            <input asp-for="name" class="form-control" />
+            <span asp-validation-for="name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.shortDec"></label>
+        <div class="col-md-5">
+            <input asp-for="shortDec" class="form-control" />
+            <span asp-validation-for="shortDec" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.img"></label>
+        <div class="col-md-5">
+            <input asp-for="img" class="form-control" />
+            <span asp-validation-for="img" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.price"></label>
+        <div class="col-md-5">
+            <input asp-for="price" class="form-control" />
+            <span asp-validation-for="price" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.IsFavourite"></label>
+        <div class="col-md-5">
+            <input asp-for="IsFavourite" class="form-control" />
+            <span asp-validation-for="IsFavourite" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.available"></label>
+        <div class="col-md-5">
+            <input asp-for="available" class="form-control" />
+            <span asp-validation-for="available" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.CategoryId"></label>
+        <div class="col-md-5">
+            <input asp-for="CategoryId" class="form-control" />
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.shelf_life"></label>
+        <div class="col-md-5">
+            <input asp-for="shelf_life" class="form-control" />
+            <span asp-validation-for="shelf_life" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Category"></label>
+        <div class="col-md-5">
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+    </div>
+</form>
